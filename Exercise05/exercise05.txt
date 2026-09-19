@@ -1,1 +1,1 @@
-
+Result: Fibonacci(20) = 6765 was obtained consistently across all thread counts (1, 2, 4, 8, 16), confirming correctness.

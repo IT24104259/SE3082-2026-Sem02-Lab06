@@ -1,1 +1,2 @@
 
+#pragma omp master restricts execution of the enclosed block to the master thread only, which by OpenMP's definition is always thread 0 of the team. Unlike single, there is no implicit barrier after a master block - the other threads do not wait for thread 0 to finish; they proceed immediately to the following statements. As a result, in the output, the "Hi again" lines from other threads can appear interleaved with, or even before, the "Inside Master"/"Exiting Master" lines, since there is no synchronization forcing them to wait.
